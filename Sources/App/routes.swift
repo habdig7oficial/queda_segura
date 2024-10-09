@@ -10,11 +10,5 @@ func routes(_ app: Application) throws {
 */
 
     try app.register(collection: IndexController())
-
-    app.get("hello") { req async -> String in
-        "Hello, world!"
-    }
-
-
     try app.register(collection: TodoController())
 }
